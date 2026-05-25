@@ -1,0 +1,33 @@
+using namespace std;
+bool isAnagram(const string &s, const string &t) {
+    if (s.length() != t.length()){
+        return false;
+    }
+    
+    string originalword = s;
+    string testword = t;
+    
+    sort(originalword.begin(), originalword.end());
+    sort(testword.begin(), testword.end());
+    
+    cout << originalword << endl;
+    
+    if(originalword != testword){
+        return false;
+    }
+    
+    
+}
+
+
+ 
+/**int letters[26] = {0};
+    
+    for (char c : s){
+        letters[c - 'a']++;
+    }
+    
+    for (char c : t){
+
+    }
+**/
